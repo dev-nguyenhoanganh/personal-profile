@@ -1,0 +1,17 @@
+{
+  "page404.heading": "Sorry, page not found!",
+  "page404.message": "Sorry, we couldn’t find the page you’re looking for. Perhaps you’ve mistyped the URL? Be sure to check your spelling.",
+  "page404.button.backToHomePage": "Go To Home",
+  "homePage.title": "Home Page",
+  "notice.maintain": "This feature is under maintenance. Please try again later.",
+  "notice.apiFetch.noData": "The current query has no posts. Please make sure you have published items matching your query.",
+  "error.blog.notFound": "The post you were looking for does not exist.",
+  "error.reloadPage": "We're sorry, an error has occurred. Please reload this page and try again.",
+  "error.upload.image": "Sorry, your files couldn't be uploaded. The upload might be too large or the server might be experiencing high network traffic.",
+  "success.update": "Your information has been successfully updated.",
+  "success.resetPassword.update": "Your password has been changed successfully.",
+  "success.resetPassword.sendEmail": "Request sent successfully. Please check your email!",
+  "validate.required": "Please fill out this field.",
+  "validate.password.mismatch": "The password confirmation does not match.",
+  "validate.email": "Please enter a valid Email address."
+}
