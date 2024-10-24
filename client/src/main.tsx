@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 
 // Styles
 import App from './App.tsx';
-import './index.css';
 
 // Load resources
 import enMessage from '@/resources/lang/en.json';

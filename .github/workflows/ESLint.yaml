@@ -11,10 +11,12 @@ on:
 
 jobs:
   eslint:
-    name: eslint
+    name: Lints JavaScript/TypeScript code
     runs-on: ubuntu-latest
     steps:
-      - name: yarn install
+      - name: Change directory
+        run: cd client
+      - name: Install all dependencies for project
         run: yarn install
       - name: eslint
         run: npm run lint

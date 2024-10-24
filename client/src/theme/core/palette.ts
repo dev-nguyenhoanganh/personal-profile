@@ -1,4 +1,4 @@
-import { alpha, type ColorSystemOptions, type Theme } from '@mui/material/styles';
+import { alpha, Theme, type ColorSystemOptions } from '@mui/material/styles';
 
 import COLORS from './colors.json';
 import { varAlpha, createPaletteChannel } from '../styles';

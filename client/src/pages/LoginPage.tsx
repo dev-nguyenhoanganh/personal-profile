@@ -1,8 +1,8 @@
 import React from 'react';
 import { useIntl } from 'react-intl';
 // @mui
-import { styled, useTheme, alpha } from '@mui/material/styles';
-import { Typography, Divider, Stack, Button, Box, Paper, Theme } from '@mui/material';
+import { styled, alpha } from '@mui/material/styles';
+import { Typography, Divider, Stack, Button, Box, Paper } from '@mui/material';
 import { useSnackbar } from 'notistack';
 
 // hooks
@@ -17,7 +17,7 @@ import LoginForm from '@/sections/auth/login/LoginForm';
 
 const StyledContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
-  height: '100%',
+  minHeight: '100vh',
 
   '&::before': {
     content: '""',
@@ -26,7 +26,7 @@ const StyledContainer = styled(Box)(({ theme }) => ({
     left: 0,
     width: '100vw',
     height: '100vh',
-    background: 'center/cover no-repeat url("/assets/Trees sprouted.jpg")',
+    background: 'center/cover no-repeat url("./assets/images/River side.jpg")',
     zIndex: '-1',
     opacity: theme.palette.mode === 'dark' ? 0.5 : 1,
   },
@@ -53,7 +53,7 @@ const StyledSection = styled('div')(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
-  // boxShadow: theme.customShadows.card,
+  boxShadow: theme.customShadows.card,
   backgroundColor: theme.palette.background.default,
   padding: theme.spacing(3),
 
@@ -77,7 +77,6 @@ const StyledContent = styled('div')(() => ({
 
 export default function HomePage() {
   const upLg = useResponsive('up', 'lg');
-  const theme: Theme = useTheme();
   // const dispatch = useAppDispatch();
   const { formatMessage } = useIntl();
 
@@ -92,7 +91,7 @@ export default function HomePage() {
   return (
     <React.Fragment>
       <StyledContainer>
-        <StyledSection theme={theme}>
+        <StyledSection>
           <Typography data-testid="sign-in-label" variant="h3" sx={{ mt: 2, mb: 4 }} gutterBottom>
             Sign in
           </Typography>
