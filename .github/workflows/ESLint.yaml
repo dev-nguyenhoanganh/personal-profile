@@ -1,4 +1,4 @@
-name: "ESLint (JS/TS) Action"
+name: "ESLint"
 # description: "Lints JavaScript/TypeScript code."
 # branding:
 #   icon: check-circle
@@ -11,7 +11,7 @@ on:
 
 jobs:
   eslint:
-    name: Lints JavaScript/TypeScript code
+    name: Lints TypeScript code
     runs-on: ubuntu-latest
     steps:
       - name: Change directory
